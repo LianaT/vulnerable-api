@@ -4,12 +4,13 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
-    # The branches below must be a subset of the branches above
     branches: [ "main" ]
   schedule:
     - cron: '42 2 * * 1'
 
-  status:             
-    - name: Maven Dependency Tree Dependency Submission
-      uses: advanced-security/maven-dependency-submission-action@v3.0.2
-            
+jobs:
+  maven_dependency_tree_submission:
+    runs-on: windows-latest
+    steps:
+      - name: Maven Dependency Tree Dependency Submission
+        uses: advanced-security/maven-dependency-submission-action@v3.0.2

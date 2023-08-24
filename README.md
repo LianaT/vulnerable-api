@@ -2,7 +2,7 @@
 Marriott International is an American multinational diversified hospitality company that manages and franchises a broad portfolio of hotels and related lodging facilities.
 
 
-COMP47910 - Secure Software Engineering 22/23
+COMP47910 - Secure Software Engineering 22/23 - Assignment 3
  
 Web Application Development
 Marriott International is an American multinational diversified hospitality company that manages and franchises a broad portfolio of hotels and related lodging facilities.

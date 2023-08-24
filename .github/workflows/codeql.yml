@@ -60,6 +60,13 @@ jobs:
     #- name: Autobuild
     #  uses: github/codeql-action/autobuild@v2
 
+# Add custom build steps: After removing the autobuild step, you’ll need to add custom build steps to your workflow to manually build your code. 
+# You can do this by adding a new run step to your workflow and specifying the commands required to build your code. 
+# For example, if you’re using Maven to build your project, you can add the following step to your workflow:
+    - name: Build with Maven
+      run: mvn clean install
+
+
     # ℹ️ Command-line programs to run using the OS shell.
     # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
 

@@ -1,0 +1,25 @@
+name: "Maven dependency tree submission"
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ "main" ]
+  schedule:
+    - cron: '42 2 * * 1'
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: windows-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    steps:             
+
+   - name: Maven Dependency Tree Dependency Submission
+                uses: advanced-security/maven-dependency-submission-action@v3.0.2
+            

@@ -10,14 +10,6 @@ on:
     - cron: '42 2 * * 1'
 
 jobs:
-  analyze:
-    name: Analyze
-    runs-on: windows-latest
-    permissions:
-      actions: read
-      contents: read
-      security-events: write
-
     steps:             
 
    - name: Maven Dependency Tree Dependency Submission

@@ -1,0 +1,28 @@
+h1{
+    display: flex;
+    justify-content: center;
+    color:#0000FF;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    color:#FF0000;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+}
+table{
+    test-align: center;
+    border-width: 1px;
+    cellpadding: 5px;
+    border: 1px solid black;
+}
+
+td {
+    text-align: center;
+}
